@@ -1,0 +1,54 @@
+/* O CONSELHO — home editorial v0.4; sobrepõe o CSS base sem alterar páginas internas */
+:root{--period-paper:#f2e8d7;--period-rule:#958575;--period-wine:#73343b}
+body:has(.periodical-home){background:#e0d6c8}
+.periodical-home{max-width:1570px;margin:18px auto 42px;padding:26px 38px 34px;background:var(--period-paper);color:#241b18;box-shadow:0 16px 50px #2c1c1222;background-image:radial-gradient(#654b3109 .7px,transparent .7px);background-size:6px 6px}
+.periodical-home h1,.periodical-home h2,.periodical-home h3,.periodical-home p,.periodical-home figure{margin-top:0}
+.periodical-home p{line-height:1.25}
+.periodical-home .folio-line{border-block:1px solid var(--period-rule);padding:8px 0;display:flex;justify-content:space-between;gap:12px;font:600 10px 'Libre Franklin',sans-serif;text-transform:uppercase;letter-spacing:.19em}
+.periodical-home .nameplate{display:grid;grid-template-columns:1fr minmax(0,3fr) 1fr;gap:24px;align-items:center;padding:14px 0 12px;border-bottom:1px solid var(--period-rule)}
+.periodical-home .nameplate-title{text-align:center;font-size:clamp(70px,9vw,150px);line-height:.83;letter-spacing:-.075em;font-weight:600;white-space:nowrap}
+.periodical-home .nameplate-sub{text-align:center;font:600 clamp(9px,1.15vw,14px) 'Libre Franklin',sans-serif;letter-spacing:.24em;text-transform:uppercase;margin-top:14px}
+.periodical-home .side-epigraph{font-style:italic;font-size:clamp(16px,1.5vw,23px);line-height:1.05;color:#765747}
+.periodical-home .side-epigraph.right{text-align:right}
+.periodical-home .journal-nav{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:11px 4px;border-bottom:4px double var(--period-rule);font:600 10px 'Libre Franklin',sans-serif;text-transform:uppercase;letter-spacing:.15em}
+.periodical-home .journal-nav .navlinks{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;flex:1}
+.periodical-home a:hover{text-decoration:underline;text-underline-offset:3px}
+.periodical-home .section-kicker{color:var(--period-wine);font:700 11px 'Libre Franklin',sans-serif;letter-spacing:.15em;text-transform:uppercase;margin:0 0 12px}
+.periodical-home .hero-editorial{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1.53fr) minmax(0,.86fr);gap:20px;border-bottom:1px solid var(--period-rule);padding:19px 0 12px;align-items:stretch}
+.periodical-home .cover-story{padding:3px 0 0}
+.periodical-home .cover-title{font-size:clamp(44px,4.05vw,67px);line-height:.91;letter-spacing:-.05em;font-weight:600;margin-bottom:14px}
+.periodical-home .cover-dek{font-size:clamp(22px,2.1vw,32px);line-height:1.05;color:#834e48}
+.periodical-home .cover-link,.periodical-home .correspondence-button{display:inline-block;background:var(--period-wine);color:#fff5e4;font:700 10px 'Libre Franklin',sans-serif;padding:14px 19px;letter-spacing:.16em;text-transform:uppercase;border:none;cursor:pointer}
+.periodical-home .hero-art{min-height:430px;overflow:hidden;border-inline:1px solid #beaa95}
+.periodical-home .hero-art img{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(1) sepia(.32) contrast(1.1);mix-blend-mode:multiply}
+.periodical-home .editor-desk{border-left:1px solid var(--period-rule);padding-left:18px}
+.periodical-home .editor-initial{font-size:92px;font-style:italic;line-height:1;color:var(--period-wine);float:left;margin:0 12px 3px 0}
+.periodical-home .editor-desk p{font-style:italic;font-size:clamp(18px,1.35vw,22px);line-height:1.16}
+.periodical-home .editor-byline{font:600 10px 'Libre Franklin',sans-serif!important;letter-spacing:.13em;text-transform:uppercase;font-style:normal!important;color:var(--period-wine)}
+.periodical-home .brief-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid var(--period-rule);padding:14px 0}
+.periodical-home .brief{padding:0 15px;border-right:1px solid var(--period-rule)}
+.periodical-home .brief:first-child{padding-left:0}.periodical-home .brief:last-child{border-right:0;padding-right:0}
+.periodical-home .brief img{width:100%;height:125px;object-fit:cover;filter:grayscale(.9) sepia(.28);mix-blend-mode:multiply;margin-bottom:8px}
+.periodical-home .brief h2{font-size:clamp(25px,2.25vw,38px);font-weight:600;line-height:1;margin:0 0 8px}
+.periodical-home .brief p{font-size:18px;color:#604e45}
+.periodical-home .brief .text-link{font:700 10px 'Libre Franklin',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--period-wine)}
+.periodical-home .council-header{display:flex;gap:12px;align-items:baseline;border-bottom:1px solid var(--period-rule);padding:12px 0 7px}
+.periodical-home .council-header h2{font:700 15px 'Libre Franklin',sans-serif;letter-spacing:.14em;color:var(--period-wine);text-transform:uppercase;margin:0}
+.periodical-home .council-header p{font:500 10px 'Libre Franklin',sans-serif;letter-spacing:.1em;text-transform:uppercase;margin:0}
+.periodical-home .people-and-note{display:grid;grid-template-columns:minmax(0,4fr) minmax(210px,1fr);gap:19px;padding:12px 0;border-bottom:1px solid var(--period-rule)}
+.periodical-home .portrait-row{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px}
+.periodical-home .portrait-tile{text-align:center;min-width:0}
+.periodical-home .portrait-emblem{height:100px;border:1px solid var(--period-rule);display:grid;place-items:center;background:linear-gradient(145deg,#dfd2bf,#efe4d5);font-size:clamp(25px,3vw,44px);font-style:italic;color:#6b4a43}
+.periodical-home .portrait-name{font:700 9px/1.4 'Libre Franklin',sans-serif;letter-spacing:.02em;text-transform:uppercase;padding-top:6px}
+.periodical-home .editor-note{border-left:1px solid var(--period-rule);padding-left:18px;display:flex;justify-content:center;flex-direction:column}
+.periodical-home .editor-note blockquote{font-style:italic;line-height:1.16;font-size:23px;margin:0 0 10px}
+.periodical-home .editor-note small{font:600 9px 'Libre Franklin',sans-serif;text-transform:uppercase;letter-spacing:.09em;color:var(--period-wine)}
+.periodical-home .postscript{margin-top:14px;display:grid;grid-template-columns:1.1fr 1.7fr 1fr;align-items:center;background:#643139;color:#fff1df;min-height:92px;padding:17px 24px;gap:20px}
+.periodical-home .postscript strong{font-size:26px;font-weight:500;text-transform:uppercase}
+.periodical-home .postscript p{margin:0;font-size:18px}
+.periodical-home .postscript button{background:none;border:1px solid #f3e8d7;color:#f3e8d7;padding:13px;cursor:pointer;font:700 10px 'Libre Franklin',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.periodical-home .footer{margin-top:20px}
+.periodical-home .menu-toggle{display:none}
+@media(max-width:1050px){.periodical-home .hero-editorial{grid-template-columns:1fr 1.2fr}.periodical-home .editor-desk{grid-column:1/-1;border-left:0;border-top:1px solid var(--period-rule);padding:14px 0 0}.periodical-home .hero-art{min-height:380px}.periodical-home .portrait-row{grid-template-columns:repeat(4,1fr)}.periodical-home .portrait-emblem{height:80px}.periodical-home .brief-grid{grid-template-columns:repeat(2,1fr);row-gap:22px}.periodical-home .brief:nth-child(2){border-right:0}.periodical-home .brief:nth-child(3){padding-left:0}}
+@media(max-width:700px){.periodical-home{margin:0;padding:15px}.periodical-home .folio-line{font-size:8px;letter-spacing:.07em}.periodical-home .folio-line span:nth-child(2){display:none}.periodical-home .nameplate{display:block}.periodical-home .side-epigraph{display:none}.periodical-home .nameplate-title{font-size:clamp(48px,12vw,76px)}.periodical-home .nameplate-sub{font-size:9px;letter-spacing:.08em}.periodical-home .journal-nav{display:block}.periodical-home .journal-nav .menu-toggle{display:block;width:100%;text-align:left}.periodical-home .journal-nav .navlinks{display:none;flex-direction:column;padding-top:8px}.periodical-home .journal-nav .navlinks.is-open{display:flex}.periodical-home .hero-editorial{grid-template-columns:1fr}.periodical-home .cover-title{font-size:clamp(42px,10vw,62px)}.periodical-home .hero-art{min-height:0;border:0}.periodical-home .hero-art img{height:auto;max-height:450px}.periodical-home .brief-grid{grid-template-columns:1fr}.periodical-home .brief{border:0;border-bottom:1px solid var(--period-rule);padding:15px 0!important}.periodical-home .brief img{height:180px}.periodical-home .people-and-note{grid-template-columns:1fr}.periodical-home .editor-note{border-left:0;border-top:1px solid var(--period-rule);padding:15px 0 0}.periodical-home .postscript{grid-template-columns:1fr}.periodical-home .council-header{display:block}.periodical-home .council-header p{margin-top:8px}}
+@media(max-width:400px){.periodical-home .portrait-row{grid-template-columns:repeat(2,1fr)}}
